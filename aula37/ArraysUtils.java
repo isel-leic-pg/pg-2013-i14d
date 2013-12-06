@@ -1,4 +1,28 @@
 public class ArraysUtils{
+
+	/*
+	 * Retorna o true se o array a tiver um elemento igual a c
+	 */
+	static boolean contains(char [] a, char c){
+		for(int i = 0; i < a.length; i++){
+			if(a[i] == c)
+				return true;
+		}
+		return false;
+	}
+	
+	/*
+	 * Retorna o numero de ocurrencias de um caracter no array a
+	 */
+	static int occurrences(char [] a, char c){
+		int r = 0;
+		for(int i = 0; i < a.length; i++){
+			if(a[i] == c)
+				r++;
+		}
+		return r;
+	}
+
 	/*
 	 * Join
 	 */
